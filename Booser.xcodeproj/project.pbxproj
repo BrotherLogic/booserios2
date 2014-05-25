@@ -21,6 +21,9 @@
 		F44B26AA19324FAB0040DF72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44B268C19324FAB0040DF72 /* UIKit.framework */; };
 		F44B26B219324FAB0040DF72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F44B26B019324FAB0040DF72 /* InfoPlist.strings */; };
 		F44B26B419324FAB0040DF72 /* BooserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F44B26B319324FAB0040DF72 /* BooserTests.m */; };
+		F44B26C1193253400040DF72 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44B26C0193253400040DF72 /* CoreLocation.framework */; };
+		F44B26C619329A8E0040DF72 /* BZFoursquare.m in Sources */ = {isa = PBXBuildFile; fileRef = F44B26C319329A8E0040DF72 /* BZFoursquare.m */; };
+		F44B26C719329A8E0040DF72 /* BZFoursquareRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F44B26C519329A8E0040DF72 /* BZFoursquareRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		F44B26AF19324FAB0040DF72 /* BooserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BooserTests-Info.plist"; sourceTree = "<group>"; };
 		F44B26B119324FAB0040DF72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F44B26B319324FAB0040DF72 /* BooserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BooserTests.m; sourceTree = "<group>"; };
+		F44B26C0193253400040DF72 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F44B26C219329A8E0040DF72 /* BZFoursquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZFoursquare.h; sourceTree = "<group>"; };
+		F44B26C319329A8E0040DF72 /* BZFoursquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZFoursquare.m; sourceTree = "<group>"; };
+		F44B26C419329A8E0040DF72 /* BZFoursquareRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZFoursquareRequest.h; sourceTree = "<group>"; };
+		F44B26C519329A8E0040DF72 /* BZFoursquareRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZFoursquareRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44B26C1193253400040DF72 /* CoreLocation.framework in Frameworks */,
 				F44B268B19324FAB0040DF72 /* CoreGraphics.framework in Frameworks */,
 				F44B268D19324FAB0040DF72 /* UIKit.framework in Frameworks */,
 				F44B268919324FAB0040DF72 /* Foundation.framework in Frameworks */,
@@ -101,6 +110,7 @@
 		F44B268719324FAB0040DF72 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F44B26C0193253400040DF72 /* CoreLocation.framework */,
 				F44B268819324FAB0040DF72 /* Foundation.framework */,
 				F44B268A19324FAB0040DF72 /* CoreGraphics.framework */,
 				F44B268C19324FAB0040DF72 /* UIKit.framework */,
@@ -112,6 +122,10 @@
 		F44B268E19324FAB0040DF72 /* Booser */ = {
 			isa = PBXGroup;
 			children = (
+				F44B26C219329A8E0040DF72 /* BZFoursquare.h */,
+				F44B26C319329A8E0040DF72 /* BZFoursquare.m */,
+				F44B26C419329A8E0040DF72 /* BZFoursquareRequest.h */,
+				F44B26C519329A8E0040DF72 /* BZFoursquareRequest.m */,
 				F44B269719324FAB0040DF72 /* BooserAppDelegate.h */,
 				F44B269819324FAB0040DF72 /* BooserAppDelegate.m */,
 				F44B269A19324FAB0040DF72 /* Main.storyboard */,
@@ -251,7 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F44B269F19324FAB0040DF72 /* BooserViewController.m in Sources */,
+				F44B26C719329A8E0040DF72 /* BZFoursquareRequest.m in Sources */,
 				F44B269919324FAB0040DF72 /* BooserAppDelegate.m in Sources */,
+				F44B26C619329A8E0040DF72 /* BZFoursquare.m in Sources */,
 				F44B269519324FAB0040DF72 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface BooserViewController : UIViewController
+@interface BooserViewController : UIViewController <CLLocationManagerDelegate>
 
 @end
