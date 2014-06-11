@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface BooserViewController : UIViewController <CLLocationManagerDelegate>
+@interface BooserViewController : UIViewController <CLLocationManagerDelegate, UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *booserTableView;
+@property (weak, nonatomic) IBOutlet UIButton *locateLabel;
+
+-(void)setLocation: (NSString *)location;
 
 @end

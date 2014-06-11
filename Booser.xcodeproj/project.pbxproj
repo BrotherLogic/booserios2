@@ -22,8 +22,11 @@
 		F44B26B219324FAB0040DF72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F44B26B019324FAB0040DF72 /* InfoPlist.strings */; };
 		F44B26B419324FAB0040DF72 /* BooserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F44B26B319324FAB0040DF72 /* BooserTests.m */; };
 		F44B26C1193253400040DF72 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44B26C0193253400040DF72 /* CoreLocation.framework */; };
-		F44B26C619329A8E0040DF72 /* BZFoursquare.m in Sources */ = {isa = PBXBuildFile; fileRef = F44B26C319329A8E0040DF72 /* BZFoursquare.m */; };
-		F44B26C719329A8E0040DF72 /* BZFoursquareRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F44B26C519329A8E0040DF72 /* BZFoursquareRequest.m */; };
+		F44B26D01932B8140040DF72 /* BooserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F44B26CF1932B8140040DF72 /* BooserTableViewCell.m */; };
+		F454B8861936E40600799D9A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F454B8851936E40600799D9A /* MainViewController.m */; };
+		F4BBC2B11947FD04003AC83C /* FourSquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BBC2B01947FD04003AC83C /* FourSquareViewController.m */; };
+		F4BBC2B41948097F003AC83C /* FoursquareTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BBC2B31948097F003AC83C /* FoursquareTableCell.m */; };
+		F4BCCBF6193A1D8B002A3FD6 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BCCBF5193A1D8B002A3FD6 /* UICKeyChainStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +60,16 @@
 		F44B26B119324FAB0040DF72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F44B26B319324FAB0040DF72 /* BooserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BooserTests.m; sourceTree = "<group>"; };
 		F44B26C0193253400040DF72 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		F44B26C219329A8E0040DF72 /* BZFoursquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZFoursquare.h; sourceTree = "<group>"; };
-		F44B26C319329A8E0040DF72 /* BZFoursquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZFoursquare.m; sourceTree = "<group>"; };
-		F44B26C419329A8E0040DF72 /* BZFoursquareRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZFoursquareRequest.h; sourceTree = "<group>"; };
-		F44B26C519329A8E0040DF72 /* BZFoursquareRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZFoursquareRequest.m; sourceTree = "<group>"; };
+		F44B26CE1932B8140040DF72 /* BooserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooserTableViewCell.h; sourceTree = "<group>"; };
+		F44B26CF1932B8140040DF72 /* BooserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooserTableViewCell.m; sourceTree = "<group>"; };
+		F454B8841936E40600799D9A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F454B8851936E40600799D9A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F4BBC2AF1947FD04003AC83C /* FourSquareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourSquareViewController.h; sourceTree = "<group>"; };
+		F4BBC2B01947FD04003AC83C /* FourSquareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourSquareViewController.m; sourceTree = "<group>"; };
+		F4BBC2B21948097F003AC83C /* FoursquareTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareTableCell.h; sourceTree = "<group>"; };
+		F4BBC2B31948097F003AC83C /* FoursquareTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareTableCell.m; sourceTree = "<group>"; };
+		F4BCCBF4193A1D8B002A3FD6 /* UICKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICKeyChainStore.h; sourceTree = "<group>"; };
+		F4BCCBF5193A1D8B002A3FD6 /* UICKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICKeyChainStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,17 +131,23 @@
 		F44B268E19324FAB0040DF72 /* Booser */ = {
 			isa = PBXGroup;
 			children = (
-				F44B26C219329A8E0040DF72 /* BZFoursquare.h */,
-				F44B26C319329A8E0040DF72 /* BZFoursquare.m */,
-				F44B26C419329A8E0040DF72 /* BZFoursquareRequest.h */,
-				F44B26C519329A8E0040DF72 /* BZFoursquareRequest.m */,
 				F44B269719324FAB0040DF72 /* BooserAppDelegate.h */,
 				F44B269819324FAB0040DF72 /* BooserAppDelegate.m */,
 				F44B269A19324FAB0040DF72 /* Main.storyboard */,
+				F4BCCBF4193A1D8B002A3FD6 /* UICKeyChainStore.h */,
+				F4BCCBF5193A1D8B002A3FD6 /* UICKeyChainStore.m */,
+				F454B8841936E40600799D9A /* MainViewController.h */,
+				F454B8851936E40600799D9A /* MainViewController.m */,
+				F44B26CE1932B8140040DF72 /* BooserTableViewCell.h */,
+				F44B26CF1932B8140040DF72 /* BooserTableViewCell.m */,
 				F44B269D19324FAB0040DF72 /* BooserViewController.h */,
 				F44B269E19324FAB0040DF72 /* BooserViewController.m */,
 				F44B26A019324FAB0040DF72 /* Images.xcassets */,
 				F44B268F19324FAB0040DF72 /* Supporting Files */,
+				F4BBC2AF1947FD04003AC83C /* FourSquareViewController.h */,
+				F4BBC2B01947FD04003AC83C /* FourSquareViewController.m */,
+				F4BBC2B21948097F003AC83C /* FoursquareTableCell.h */,
+				F4BBC2B31948097F003AC83C /* FoursquareTableCell.m */,
 			);
 			path = Booser;
 			sourceTree = "<group>";
@@ -265,10 +280,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F44B269F19324FAB0040DF72 /* BooserViewController.m in Sources */,
-				F44B26C719329A8E0040DF72 /* BZFoursquareRequest.m in Sources */,
+				F4BBC2B41948097F003AC83C /* FoursquareTableCell.m in Sources */,
+				F44B26D01932B8140040DF72 /* BooserTableViewCell.m in Sources */,
+				F4BBC2B11947FD04003AC83C /* FourSquareViewController.m in Sources */,
 				F44B269919324FAB0040DF72 /* BooserAppDelegate.m in Sources */,
-				F44B26C619329A8E0040DF72 /* BZFoursquare.m in Sources */,
+				F454B8861936E40600799D9A /* MainViewController.m in Sources */,
 				F44B269519324FAB0040DF72 /* main.m in Sources */,
+				F4BCCBF6193A1D8B002A3FD6 /* UICKeyChainStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +401,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -454,6 +473,70 @@
 			};
 			name = Release;
 		};
+		F44B26C81932A51B0040DF72 /* mainconfig */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = mainconfig;
+		};
+		F44B26C91932A51B0040DF72 /* mainconfig */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Booser/Booser-Prefix.pch";
+				INFOPLIST_FILE = "Booser/Booser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = mainconfig;
+		};
+		F44B26CA1932A51B0040DF72 /* mainconfig */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Booser.app/Booser";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Booser/Booser-Prefix.pch";
+				INFOPLIST_FILE = "BooserTests/BooserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = mainconfig;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -462,6 +545,7 @@
 			buildConfigurations = (
 				F44B26B519324FAB0040DF72 /* Debug */,
 				F44B26B619324FAB0040DF72 /* Release */,
+				F44B26C81932A51B0040DF72 /* mainconfig */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -471,16 +555,20 @@
 			buildConfigurations = (
 				F44B26B819324FAB0040DF72 /* Debug */,
 				F44B26B919324FAB0040DF72 /* Release */,
+				F44B26C91932A51B0040DF72 /* mainconfig */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F44B26BA19324FAB0040DF72 /* Build configuration list for PBXNativeTarget "BooserTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F44B26BB19324FAB0040DF72 /* Debug */,
 				F44B26BC19324FAB0040DF72 /* Release */,
+				F44B26CA1932A51B0040DF72 /* mainconfig */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

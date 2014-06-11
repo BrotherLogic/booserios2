@@ -7,13 +7,49 @@
 //
 
 #import "BooserAppDelegate.h"
+#import "UICKeyChainStore.h"
 
 @implementation BooserAppDelegate
+
+@synthesize mainView;
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    NSLog(@"Calling Application Bundle ID: %@", sourceApplication);
+    NSLog(@"URL scheme:%@", [url scheme]);
+    NSLog(@"URL query: %@", [[url query] class] );
+    NSRange ranger = [[url query] rangeOfString:@"code="];
+    if (ranger.location != NSNotFound){
+        NSString *code = [[url query] substringFromIndex:ranger.location + ranger.length];
+        
+        NSString *newURL = [NSString stringWithFormat:@"https://untappd.com/oauth/authorize/?client_id=7611889A7239B8DBB5A91C4AF567EED2BEBF18D1&client_secret=18790ABFE479B1EDB40CD0174061069392AC6DD5&response_type=code&redirect_url=booserapp://blah.com&code=%@",code];
+        
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:newURL]];
+        [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+            NSError *error = nil;
+            NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+            NSString *token = [[jsonDict objectForKey:@"response"] objectForKey:@"access_token"];
+            
+            [self loginWithToken:token];
+        }];
+    }
+    
+    return YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     return YES;
+}
+
+-(void)loginWithToken:(NSString *) token {
+    //Store the token in the keychain
+    [UICKeyChainStore setString:token forKey:@"untappd_token"];
+    NSLog(@"Stored Token %@",token);
+    [mainView performSegueWithIdentifier:@"GetBeerList" sender:self];
+    
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

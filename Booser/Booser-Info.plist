@@ -4,6 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>I need to know where you are</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>I need to know where you are</string>
 	<key>CFBundleDisplayName</key>
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleExecutable</key>
@@ -29,6 +33,17 @@
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
+	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>Booser.MainViewController</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>booserapp</string>
+			</array>
+		</dict>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
